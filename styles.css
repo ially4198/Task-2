@@ -52,9 +52,14 @@ width: 80px;
 color: white;
 font-weight: 700;
 margin-left: 10px;
+transition: 1s;
 } 
+.item:hover #logo{
+transform: translateX(150%);
+transition: 1s;
+}
 
-.item:hover, .logo{
+.item:hover{
     color: white;
     background-color: black;
     transform: scale(1.03);
@@ -79,6 +84,9 @@ img{
     img{
     width: 250px;
     }
+    .item:hover #logo{
+        transform: translateX(70%);
+    }
 }
 @media screen and (max-width:600px) {
     .container{
@@ -87,5 +95,7 @@ img{
     img{
     width: 350px;
     }
-
+    .item:hover #logo{
+        transform: translateX(120%);
+    }
 }
